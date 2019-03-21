@@ -111,6 +111,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="" data-path="b.html"><a href="b.html"><i class="fa fa-check"></i>B</a></li>
 <li class="chapter" data-level="" data-path="c.html"><a href="c.html"><i class="fa fa-check"></i>C</a><ul>
+<li class="chapter" data-level="" data-path="c.html"><a href="c.html#character"><i class="fa fa-check"></i>character</a></li>
 <li class="chapter" data-level="" data-path="c.html"><a href="c.html#chunk"><i class="fa fa-check"></i>chunk</a></li>
 <li class="chapter" data-level="" data-path="c.html"><a href="c.html#comment"><i class="fa fa-check"></i>comment</a></li>
 <li class="chapter" data-level="" data-path="c.html"><a href="c.html#concatenate"><i class="fa fa-check"></i>concatenate</a></li>
@@ -119,13 +120,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="" data-path="d.html"><a href="d.html#data-type"><i class="fa fa-check"></i>data type</a></li>
 <li class="chapter" data-level="" data-path="d.html"><a href="d.html#double"><i class="fa fa-check"></i>double</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="e.html"><a href="e.html"><i class="fa fa-check"></i>E</a></li>
+<li class="chapter" data-level="" data-path="e.html"><a href="e.html"><i class="fa fa-check"></i>E</a><ul>
+<li class="chapter" data-level="" data-path="e.html"><a href="e.html#element"><i class="fa fa-check"></i>element</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="f.html"><a href="f.html"><i class="fa fa-check"></i>F</a><ul>
 <li class="chapter" data-level="" data-path="f.html"><a href="f.html#function"><i class="fa fa-check"></i>function</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="g.html"><a href="g.html"><i class="fa fa-check"></i>G</a></li>
 <li class="chapter" data-level="" data-path="h.html"><a href="h.html"><i class="fa fa-check"></i>H</a></li>
 <li class="chapter" data-level="" data-path="i.html"><a href="i.html"><i class="fa fa-check"></i>I</a><ul>
+<li class="chapter" data-level="" data-path="i.html"><a href="i.html#index_"><i class="fa fa-check"></i>index</a></li>
 <li class="chapter" data-level="" data-path="i.html"><a href="i.html#integer"><i class="fa fa-check"></i>integer</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="j.html"><a href="j.html"><i class="fa fa-check"></i>J</a></li>
@@ -187,19 +191,19 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h2>data type</h2>
 <ul>
 <li><a href="i.html#integer">integer</a> (whole numbers like 1L, -10L, 3000L)</li>
-<li>double (numbers like -0.223, 10.324, 1e4)</li>
-<li><a href="s.html#string">string</a></li>
+<li><a href="d.html#double">double</a> (numbers like -0.223, 10.324, 1e4)</li>
+<li><a href="c.html#character">character</a> (letters or words like &quot;I love R&quot;)</li>
 <li>logical (<code>TRUE</code> or <code>FALSE</code>)</li>
 </ul>
 <p>If you want to know what data type a variable is, use the function <code>typeof</code>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">typeof</span>(<span class="dv">10</span>)
-<span class="kw">typeof</span>(<span class="st">&quot;10&quot;</span>)
-<span class="kw">typeof</span>(10L)
-<span class="kw">typeof</span>(<span class="dv">10</span> <span class="op">==</span><span class="st"> </span><span class="dv">10</span>)</code></pre></div>
-<pre><code>## [1] &quot;double&quot;
-## [1] &quot;character&quot;
-## [1] &quot;integer&quot;
-## [1] &quot;logical&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">typeof</span>(<span class="dv">10</span>)</code></pre></div>
+<pre><code>## [1] &quot;double&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">typeof</span>(<span class="st">&quot;10&quot;</span>)</code></pre></div>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">typeof</span>(10L)</code></pre></div>
+<pre><code>## [1] &quot;integer&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">typeof</span>(<span class="dv">10</span> <span class="op">==</span><span class="st"> </span><span class="dv">10</span>)</code></pre></div>
+<pre><code>## [1] &quot;logical&quot;</code></pre>
 
 </div>
 <div id="double" class="section level2">
